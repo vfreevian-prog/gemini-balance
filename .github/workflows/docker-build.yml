@@ -14,7 +14,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: freevian/gemini-balance
+  IMAGE_NAME: vfreevian-prog/gemini-balance
 
 jobs:
   build-and-push:
