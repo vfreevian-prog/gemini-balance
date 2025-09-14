@@ -82,6 +82,9 @@ class ModelService:
             return False
 
         model = model.strip()
+        # 处理 -custom 后缀
+        if model.endswith("-custom"):
+            model = model[:-7]
         if model.endswith("-search"):
             model = model[:-7]
             return model in settings.SEARCH_MODELS

@@ -152,6 +152,8 @@ def _build_tools(
 
 
 def _get_real_model(model: str) -> str:
+    if model.endswith("-custom"):
+        model = model[:-7]
     if model.endswith("-search"):
         model = model[:-7]
     if model.endswith("-image"):
